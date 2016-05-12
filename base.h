@@ -1,17 +1,21 @@
+#ifndef BASE_H
+#define BASE_H
+
 class Base {
-	private:
+	protected:
 		bool success;
 	public:
 		Base() {};
 		virtual void execute() = 0;
 
-		bool getSuccess(){
+	    virtual bool getSuccess(){
 
 			return success;			
 		}
 
-		void setSuccess(bool input){
+		virtual void setSuccess(bool input){
 
 			success = input;
 		}
 };
+#endif
